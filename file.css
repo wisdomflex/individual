@@ -1,0 +1,159 @@
+/* CSS RESET */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+/*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+   
+    6. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    7. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+    8. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* MAIN CSS */
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(154, 140, 255, 0.18);
+  padding: 5%;
+  height: 100vh;
+}
+#main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+img{
+    width: 77.33px;
+    height: 77.17px;
+}
+.left {
+  width: 40%;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.left h2 {
+  padding: 4%;
+}
+.left p {
+  padding: 0% 4% 0% 4%;
+  font-size: 18px;
+}
+
+ .float{
+    width:200px;
+    height: 1200px;
+    top: 40px;
+    left:600px;
+    margin: 0px;
+    padding: 20px;
+    border-radius:12px;
+    background-color: #FFFFFF;
+    box-shadow:0px 4px 50px 0px #0408131A;
+}
+
+
+.input-box label{
+    width:15rem;
+    font-weight: 600;
+    font-size:0.8rem;
+    line-height: 0.8rem;
+    letter-spacing: 0.1;
+    color:hsla(200, 96%,10% , 1);
+    margin-block-end: 0.8rem;
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 20px;
+}
+.form-group input,
+.form-group select{
+    width: 90%;
+    padding: 8px;
+    box-sizing: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+    margin-bottom: 10px;
+}
+.form-group input:hover,
+.form-group {
+  border-color: #3498db; /* Change color on hover */
+}
+
+.form-group input[type="date"] {
+  /* Styling for date input */
+  padding: 8px;
+}
+
+.form-group button {
+  background-color: #008192;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+  background-color: #2980b9; /* Change color on hover */
+}
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paragraph {
+    color: #2ec4b6;
+  }
